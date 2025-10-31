@@ -9,7 +9,7 @@
     <h1>Actividades del evento</h1>
     <ul>
         {% for actividad in actividades %}
-        {% if actividad.evento.id == evento.id %}
+        {% if actividad.evento.id == evento_id %}
         <li>
             <p> {{actividad.nombre}} </p>
             <p>{{actividad.descripcion}}</p>
