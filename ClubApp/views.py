@@ -18,8 +18,7 @@ def actividades(request):
 
 def detalle_evento(request, evento_id):
     actividades = Actividad.objects.all()
-    context = {'actividades': actividades,
-               'evento_id': evento_id}
+    context = {'actividades': actividades, 'evento': get_object_or_404(Evento, id=evento_id)}
     return render(request, 'lista_actividades.html', context)
 
 def organizadores(request):
