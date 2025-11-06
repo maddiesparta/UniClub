@@ -10,8 +10,10 @@
     <ul>
         {% for evento in eventos %}
         <li>
-            <a href="{% url 'detalle_evento' evento.id %}">{{ evento.titulo }}</a>
+            <h2><a href="{% url 'detalle_evento' evento.id %}">{{ evento.titulo }}</a></h2>
             <p>{{evento.descripcion}}</p>
+            <p><strong>Fecha:</strong> {{evento.fecha}}</p>
+            <p><strong>Organizador/a:</strong> {{evento.organizador.nombre}}</p>
             <img src="{{ evento.pancarta }}" alt="Pancarta del evento {{ evento.titulo }}">
         </li>
         {% endfor %}

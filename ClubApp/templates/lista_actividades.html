@@ -6,15 +6,15 @@
     <title>Actividades</title>
 </head>
 <body>
-    <h1>Actividades del evento</h1>
+    <h1>Actividades del evento {{evento.titulo}}</h1>
     <ul>
         {% for actividad in actividades %}
-        {% if actividad.evento.id == evento_id %}
+        {% if actividad.evento.id == evento.id %}
         <li>
-            <p> {{actividad.nombre}} </p>
+            <h2> {{actividad.nombre}} </h2>
             <p>{{actividad.descripcion}}</p>
-            <p>{{actividad.hora}}</p>
-            <img src="{{ actividad.foto }}" alt="Pancarta del evento {{ actividad.nombre }}">
+            <p><strong>Hora: </strong>{{actividad.hora}}</p>
+            <img src="{{ actividad.foto }}" alt="Foto de la actividad {{ actividad.nombre }}">
         </li>
         {% endif %}
         {% endfor %}

@@ -12,9 +12,10 @@
         {% for organizador in organizadores %}
         <li>
             <h2>{{organizador.nombre}}</h2>
-            <p>Información de contacto</p>
-            <a href="{{organizador.email}}">{{organizador.email}}</a><br>
+            <p>Contacto: <a href="mailto:{{organizador.email}}">{{organizador.email}}</a></p>
+            
             <a href="{% url 'detalle_organizador' organizador.id %}">Eventos organizados</a><br>
+            <h3>Foto de perfil:</h3>
             <img src="{{organizador.foto_perfil}}">
         </li>
         {% endfor %}
