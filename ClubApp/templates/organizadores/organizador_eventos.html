@@ -12,7 +12,7 @@
         {% for evento in eventos %}
         {% if evento.organizador.id == organizador.id %}
         <li>
-            <h3><a href="{% url 'detalle_evento' evento.id %}">{{ evento.titulo }}</a></h3>
+            <h3><a href="{% url 'evento_actividades' evento.id %}">{{ evento.titulo }}</a></h3>
             <p>{{evento.descripcion}}</p>
             <p>{{actividad.dia}}</p>
             <img src="{{ evento.pancarta }}" alt="Pancarta del evento {{ evento.nombre }}">
