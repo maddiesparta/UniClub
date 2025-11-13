@@ -1,0 +1,12 @@
+.pfp {
+    border: 5px solid #00C6F0;
+    border-radius: 100%;
+    width: 25%;
+    height: 25%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.user-info {
+    display: flex;
+}

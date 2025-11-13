@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>simplestyle_blue_trees</title>
+    <title>Organizadores</title>
     <meta name="description" content="website description" />
     <meta name="keywords" content="website keywords, website keywords" />
     <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
@@ -10,6 +10,12 @@
       rel="stylesheet"
       type="text/css"
       href="{% static 'style/style.css' %}"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/organizadores.css' %}"
     />
   </head>
 
@@ -41,7 +47,6 @@
 
       <div id="content_header"></div>
       <div id="site_content">
-        <div id="banner"></div>
         <div id="sidebar_container">
           <div class="sidebar">
             <div class="sidebar_top"></div>
@@ -102,18 +107,18 @@
 
           <ul>
             {% for organizador in organizadores %}
-            <li>
-              <h2>{{organizador.nombre}}</h2>
+            <li class="user-info">
+              <img src="{{organizador.foto_perfil}}" class="pfp"/>
+
+              <div>
+                <h2>{{organizador.nombre}}</h2>
               <p>
                 Contacto:
                 <a href="mailto:{{organizador.email}}">{{organizador.email}}</a>
               </p>
 
-              <a href="{% url 'organizador_eventos' organizador.id %}"
-                >Eventos organizados</a
-              ><br />
-              <h3>Foto de perfil:</h3>
-              <img src="{{organizador.foto_perfil}}" />
+              <a href="{% url 'organizador_eventos' organizador.id %}">Eventos organizados</a><br />
+              </div>
             </li>
             {% endfor %}
           </ul>
