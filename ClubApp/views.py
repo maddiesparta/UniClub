@@ -4,7 +4,7 @@ from .models import Evento, Actividad, Organizador
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'index2.html')
 
 def eventos(request):
     eventos = Evento.objects.all()

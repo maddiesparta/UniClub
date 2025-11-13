@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle actividad</title>
+</head>
+<body>
+    <h1>Detalles de {{actividad.nombre}}</h1>
+    <ul>
+
+        <li>
+            <p><strong>{{actividad.nombre}}</strong></p>
+            <p>{{actividad.descripcion}}</p>
+            <p><strong>Hora: </strong>{{actividad.hora}}</p>
+            <img src="{{ actividad.foto }}" alt="Pancarta del evento {{ actividad.nombre }}">
+        </li>
+    
+       
+
+    </ul>
+</body>
+</html>

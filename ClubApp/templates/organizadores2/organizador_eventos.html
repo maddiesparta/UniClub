@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+
+    <h1>Eventos organizados por {{organizador.nombre}}</h1> 
+    <ul>
+        {% for evento in eventos %}
+        {% if evento.organizador.id == organizador.id %}
+        <li>
+            <h3><a href="{% url 'evento_actividades' evento.id %}">{{ evento.titulo }}</a></h3>
+            <p>{{evento.descripcion}}</p>
+            <p>{{actividad.dia}}</p>
+            <img src="{{ evento.pancarta }}" alt="Pancarta del evento {{ evento.nombre }}">
+        </li>{{actividad.nombre}}
+        {% endif %}
+        {% endfor %}
+
+    </ul>
+</body>
+</html>
