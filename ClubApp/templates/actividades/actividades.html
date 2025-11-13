@@ -11,6 +11,11 @@
       type="text/css"
       href="{% static 'style/style.css' %}"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/actividades.css' %}"
+    />
   </head>
 
   <body>
@@ -99,15 +104,19 @@
         <div id="content">
           <!-- insert the page content here -->
           <h1>Actividades de todos los eventos</h1>
-          <ul>
+          <ol>
             {% for actividad in actividades %}
             <li>
               <a href="{% url 'detalle_actividad' actividad.id %}"
                 >{{actividad.nombre}}
-              </a>
+              </a> <br>
+              <p>Hora: {{actividad.hora}}</p> 
+              <p id="desc">{{actividad.descripcion}}</p>
+              <img src="{{actividad.foto}}">
             </li>
+            
             {% endfor %}
-          </ul>
+          </ol>
         </div>
       </div>
       <div id="content_footer"></div>
