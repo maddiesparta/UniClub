@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades</title>
-</head>
-<body>
-    <h1>Actividades del evento {{evento.titulo}}</h1>
-    <ul>
-        {% for actividad in actividades %}
-        {% if actividad.evento.id == evento.id %}
-        <li>
-            <h2> {{actividad.nombre}} </h2>
-            <p>{{actividad.descripcion}}</p>
-            <p><strong>Hora: </strong>{{actividad.hora}}</p>
-            <img src="{{ actividad.foto }}" alt="Foto de la actividad {{ actividad.nombre }}">
-        </li>
-        {% endif %}
-        {% endfor %}
-
-    </ul>
-</body>
-</html>
+{% extends 'index.html' %} 
+{% block content %}
+<h1>Actividades del evento {{evento.titulo}}</h1>
+<ul>
+  {% for actividad in actividades %} {% if actividad.evento.id == evento.id %}
+  <li>
+    <h2>{{actividad.nombre}}</h2>
+    <p>{{actividad.descripcion}}</p>
+    <p><strong>Hora: </strong>{{actividad.hora}}</p>
+    <img
+      src="{{ actividad.foto }}"
+      alt="Foto de la actividad {{ actividad.nombre }}"
+    />
+  </li>
+  {% endif %} {% endfor %}
+</ul>
+{% endblock %}
