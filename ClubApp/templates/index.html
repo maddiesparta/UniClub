@@ -27,12 +27,14 @@
         </div>
         <div id="menubar">
           <ul id="menu">
+            {% block nav %}
             <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
             <li class="selected"><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'eventos' %}">Eventos</a></li>
             <li><a href="{% url 'organizadores' %}">Organizadores</a></li>
             <li><a href="{% url 'actividades' %}">Actividades</a></li>
             <li><a href="{% url 'eventos' %}">Contacto</a></li>
+            {% endblock %}
           </ul>
         </div>
       </div>
@@ -103,7 +105,7 @@
             sobre muchos temas, con el objetivo de fomentar la participación y
             las actividades grupales entre los y las estudiantes.
           </p>
-          <p>Este es un grupo abierto para todas las personas interesadas</p>
+          <p>Este es un grupo abierto para todas las personas interesadas.</p>
           {% endblock %}
         </div>
       </div>
