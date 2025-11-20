@@ -36,4 +36,5 @@ def detalle_actividad(request, actividad_id):
     context = {'actividad' : actividad}
     return render(request,'actividades/detalle_actividad.html',context)
     
-
+def contacto(request):
+    return render(request, 'contacto/contacto.html')

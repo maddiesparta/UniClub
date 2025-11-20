@@ -1,0 +1,21 @@
+{%extends 'index.html'%}
+{% block nav %}
+    <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'eventos' %}">Eventos</a></li>
+    <li><a href="{% url 'organizadores' %}">Organizadores</a></li>
+    <li><a href="{% url 'actividades' %}">Actividades</a></li>
+    <li class="selected"><a href="{% url 'eventos' %}">Contacto</a></li>
+{% endblock %}
+{% block content %}
+
+    <h1>Contactanos mediante:</h1>
+     <table id="tabla_contacto">
+        <tr>
+            <td><h2>Correo electronico:</h2></td>
+            <td><a href="info@uniclub.eus">info@uniclub.eus</a></td>
+        </tr>
+    </table>
+
+    
+{%endblock%}
