@@ -434,3 +434,30 @@ p{
     font-weight: lighter; 
    
 }
+
+#dark-mode {
+  padding: 6px 11px 6px 11px !important;
+  display: block;
+  background-color: #3B3B3B; 
+  text-align: center;
+  color: white
+}
+
+#dark-mode:hover {
+  color: #3B3B3B;
+  background-color: white;
+}
+
+.dark-mode-text {
+  color: white !important;
+}
+
+.dark-mode-background {
+  background-color: #1d1d1f !important;
+  background: #323232 !important;
+}
+
+.dark-mode-background-lighter {
+  background: #424242 !important;
+  border: 1px solid #424242 !important
+}
