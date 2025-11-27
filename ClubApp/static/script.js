@@ -24,6 +24,9 @@ function enable_dark_mode() {
             var element = document.getElementById("uniclub-title");
             element.classList.remove("dark-mode-text")
 
+            var element = document.getElementById("footer");
+            element.classList.remove("dark-mode-background")
+
             var element = document.getElementById("menubar");
             element.classList.remove("dark-mode-background")
 
@@ -55,6 +58,9 @@ function enable_dark_mode() {
             element.classList.add("dark-mode-text")
 
             var element = document.getElementById("menubar");
+            element.classList.add("dark-mode-background")
+
+            var element = document.getElementById("footer");
             element.classList.add("dark-mode-background")
 
             var element = document.getElementById("dark-mode");
@@ -92,5 +98,5 @@ async function getWeather(){
 
 // let arrayTemperatures = [temperatures[6],temperatures[10],temperatures[14], temperatures[18]]
 
-let weather_array = getWeather()
+getWeather()
 
