@@ -48,7 +48,7 @@
               <!-- insert your sidebar items here -->
               <h3>Proximos eventos</h3>
               {% for evento in proximos_eventos %}
-                <h4>{{evento.titulo}}</h4>
+                <a href="{% url 'evento_actividades' evento.id %}"><h4>{{evento.titulo}}</h4></a>
                 <h5>{{evento.fecha}}</h5>
               {%empty%}
                 <h4>No hay eventos</h4>
