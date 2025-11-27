@@ -452,6 +452,8 @@ p{
 #dark-mode:hover {
   color: #3B3B3B;
   background-color: white;
+  cursor:pointer;
+  
 }
 
 .dark-mode-text {

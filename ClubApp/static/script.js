@@ -64,4 +64,21 @@ function enable_dark_mode() {
         isDark = !isDark
       }
   
+
+console.log("hola")      
 document.getElementById("dark-mode").addEventListener("click", enable_dark_mode);
+
+
+async function getWeather(){
+    let response = await fetch ('https://api.open-meteo.com/v1/forecast?latitude=43.2627&longitude=-2.9253&hourly=temperature_2m&models=ecmwf_ifs&forecast_days=1')
+    let data= await response.json()
+    let temperatures = data.hourly.temperature_2m
+    console.log(temperatures)
+    return temperatures
+}
+
+// let arrayTemperatures = [temperatures[6],temperatures[10],temperatures[14], temperatures[18]]
+
+let a = getWeather()
+console.log(a)
+alert("hola")
