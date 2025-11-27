@@ -1,12 +1,23 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Evento, Actividad, Organizador
+from datetime import date, datetime
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    eventos_ordenados = sorted(Evento.objects.all(), key=obtener_fecha)
+    hoy = date.today()
+    proximos = [
+        e for e in eventos_ordenados
+        if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
+    ]
+    proximos3 = proximos[:3]
+    return render(request, 'index.html', {"proximos_eventos":proximos3})
 
-def eventos(request):
+def obtener_fecha(evento):
+    return datetime.strptime(evento.fecha, "%d/%m/%Y").date()
+
+def eventos(request): 
     eventos = Evento.objects.all()
     context = {'eventos': eventos}
     return render(request, 'eventos/eventos.html', context)
