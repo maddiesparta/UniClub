@@ -59,25 +59,22 @@
           <div class="sidebar">
             <div class="sidebar_top"></div>
             <div class="sidebar_item">
-              <h3>Search</h3>
-              <form method="post" action="#" id="search_form">
+              <h3>Busca un evento</h3>
                 <p>
                   <input
+                    id="search-field"
                     class="search"
                     type="text"
                     name="search_field"
-                    value="Enter keywords....."
+                    placeholder="Busca un evento"
+                    onkeyup="search()"
                   />
-                  <input
-                    name="search"
-                    type="image"
-                    style="border: 0; margin: 0 0 -9px 5px"
-                    src="style/search.png"
-                    alt="Search"
-                    title="Search"
-                  />
+                  <ul id="search-list">
+                    {% for evento in eventos %}
+                      <li><a href="{% url 'evento_actividades' evento.id %}">{{evento.titulo}}</a></li>
+                    {% endfor %}
+                  </ul>
                 </p>
-              </form>
             </div>
             <div class="sidebar_base"></div>
           </div>

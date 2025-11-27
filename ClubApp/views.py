@@ -12,7 +12,7 @@ def index(request):
         if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
     ]
     proximos3 = proximos[:3]
-    return render(request, 'index.html', {"proximos_eventos":proximos3})
+    return render(request, 'index.html', {"proximos_eventos":proximos3, "eventos": eventos_ordenados})
 
 def obtener_fecha(evento):
     return datetime.strptime(evento.fecha, "%d/%m/%Y").date()
