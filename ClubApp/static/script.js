@@ -128,3 +128,18 @@ var ul = document.getElementById("search-list")
 ul.style.display = "none"
 getWeather()
 
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.getElementById('carousel')
+
+    let currentIndex = 0
+    const items = document.querySelectorAll('.carousel_item')
+    const totalItems = items.length
+
+    function nextSlide(){
+        currentIndex = (currentIndex + 1) % totalItems
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`
+    }
+    carousel.style.transform = 'translateX(0%)'
+    setInterval(nextSlide, 1000)
+
+})

@@ -39,7 +39,15 @@
 
       <div id="content_header"></div>
       <div id="site_content">
-        <div id="banner"></div>
+        <div id="banner">
+          <div id="carousel">
+            {% for evento in eventos %}
+              <div class="carousel_item">
+                <img src="{{evento.pancarta}}" alt="imagen carousel">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
         <div id="sidebar_container">
           <div class="sidebar">
             <div class="sidebar_top"></div>

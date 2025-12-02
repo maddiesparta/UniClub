@@ -102,12 +102,7 @@ ol li
   border-bottom: 1px solid #CCC;
   height: 186px;}
   
-#banner
-{  background: transparent url(banner.jpg) no-repeat;
-  width: 860px;
-  height: 180px;
-  margin-bottom: 20px;
-  border: 10px solid #DDD;}
+
 
 #logo
 { width: 880px;
@@ -238,6 +233,36 @@ ul#menu li a:hover
   margin: 0 0 0 0; 
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
+.imagen_actividades{
+  border: 1px solid #00C6F0;
+    box-shadow: 0 2px 6px #00C6F0;
+    border-radius: 8px;
+    width:15rem;
+    height: 9rem;
+    margin-top:5px;
+}
+.imagen_actividades img {
+  margin-top:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imagen_detalle_actividades{
+  border: 1px solid #00C6F0;
+    box-shadow: 0 2px 6px #00C6F0;
+    border-radius: 8px;
+    width:300px;
+    height: 170px;
+    margin-top:5px;
+}
+
+.imagen_detalle_actividades img{
+  padding: 0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 #footer
 { width: 100%;
@@ -337,14 +362,7 @@ table tr td
   border-top: 1px solid #FFF;
 }
 
-.pfp {
-    border: 5px solid #00C6F0;
-    border-radius: 100%;
-    width: 25%;
-    height: 25%;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
+
 
 .user-info {
     display: flex;
@@ -397,6 +415,18 @@ table tr td
   object-fit: cover;
 }
 
+.pfp {
+  border: 5px solid #00C6F0;
+  border-radius: 100%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 130px;
+  height: 130px;
+}
+.user-info {
+  display: flex;
+}
+
 .foto_organizador {
     width: 2rem;
     height: 2rem;
@@ -423,14 +453,7 @@ table tr td
     font-size: medium;    
 }
 
-img{
-    width: 60%;
-    height: 60%;
-    border-radius:8px;
-    margin-top:5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.17);
-    margin-bottom: 5%;
-}
+
 
 p{
     font-weight: bold;
@@ -474,3 +497,31 @@ p{
 .tiempo-list {
   list-style: circle !important;
 }
+
+#banner{
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  height: 200px;
+  margin-bottom: 20px auto;
+  border-radius: 8px;
+
+}
+#carousel{
+  display:flex;
+  transition:transform .5s ease-in-out;
+  height: 100%;
+}
+.carousel_item{
+  min-width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+.carousel_item img{
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+  display:block;
+}
+

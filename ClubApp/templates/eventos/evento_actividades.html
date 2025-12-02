@@ -18,10 +18,10 @@
     <h2>{{actividad.nombre}}</h2>
     <p>{{actividad.descripcion}}</p>
     <p><strong>Hora: </strong>{{actividad.hora}}</p>
-    <img
+    <div class="imagen_actividades"> <img
       src="{{ actividad.foto }}"
       alt="Foto de la actividad {{ actividad.nombre }}"
-    />
+    /></div>
   </li>
   {% endif %} {% endfor %}
 </ul>
