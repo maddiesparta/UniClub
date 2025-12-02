@@ -41,11 +41,19 @@
       <div id="site_content">
         <div id="banner">
           <div id="carousel">
-            {% for evento in eventos %}
+            {%if eventos|length > 1%}
+              {% for evento in eventos %}
+                <div class="carousel_item">
+                  <img src="{{evento.pancarta}}" alt="imagen carousel">
+                </div>
+              {% endfor %}
+            {%else%}
+              {% for evento in eventos %}
               <div class="carousel_item">
-                <img src="{{evento.pancarta}}" alt="imagen carousel">
+                <img src="{{evento.pancarta}}" alt="Pancarta del evento {{evento.titulo}}">
               </div>
-            {% endfor %}
+              {% endfor %}
+            {% endif %}
           </div>
         </div>
         <div id="sidebar_container">

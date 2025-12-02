@@ -99,7 +99,7 @@ def inscripcionForm(request, evento_id):
             return HttpResponseRedirect('/ClubApp/eventos/')
 
     else:
-        context = {'evento':inscripcion_inst}
+        context = {'evento':inscripcion_inst,'eventos': [inscripcion_inst],}
         form = InscripcionForm()
         context.update({"form":form})
         return render(request, 'contacto/inscripcion.html', context)

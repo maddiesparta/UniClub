@@ -411,8 +411,7 @@ table tr td
     border-radius: 8px;
     width: 35rem;
     height: 9rem;
-    margin-top:5px;
-    
+    margin-top:5px; 
 }
 .evento_imagen img {
   margin-top:0;
@@ -445,7 +444,9 @@ table tr td
 
 .organizador_nombre{
     margin-top: 5px;
+    margin-bottom:10px;
 }
+
 
 .organizador_nombre a{
     text-decoration: none;
@@ -453,6 +454,7 @@ table tr td
     font-weight: bold;
     font-size: 18px;
     vertical-align: middle;
+    
 }
 
 .boton_inscripcion{
@@ -545,6 +547,7 @@ p{
   align-content: center;
   background-color: #d8d8d89a;
   border-radius: 15px;
+  margin-top:20px;
 }
 
 .campos{
