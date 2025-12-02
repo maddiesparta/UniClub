@@ -391,6 +391,12 @@ table tr td
     flex-direction: row;
 }
 
+.descripcion_evento{
+  width: 100%;
+  margin-bottom: 1.2rem;
+  font-size: 18px;
+}
+
 .side_details {
     margin-left: 5%;
     width: 85%;
@@ -403,7 +409,7 @@ table tr td
     border: 1px solid #00C6F0;
     box-shadow: 0 2px 6px #00C6F0;
     border-radius: 8px;
-    width:15rem;
+    width: 35rem;
     height: 9rem;
     margin-top:5px;
     
@@ -447,6 +453,13 @@ table tr td
     font-weight: bold;
     font-size: 18px;
     vertical-align: middle;
+}
+
+.boton_inscripcion{
+  width: 8rem;
+  height: 2rem;
+  border: 2px solid #00C6F0;
+  border-radius: 10px;
 }
 
 #content a{
@@ -525,3 +538,45 @@ p{
   display:block;
 }
 
+/* Estilo inscripcion.html */
+.formulario_inscripcion{
+  border: 2px solid #00C6F0;
+  height:30rem;
+  align-content: center;
+  background-color: #d8d8d89a;
+  border-radius: 15px;
+}
+
+.campos{
+  margin-bottom: 5px;
+  margin-left: 11rem;
+  align-content: center;
+}
+
+.campos label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgb(99, 99, 99);
+  font-size:1.5rem;
+}
+
+.campos input{
+  width: 15rem;
+  height: 2rem;
+  padding: 5px;
+  border: 2px solid #00c4f0e8;
+  border-radius: 4px;
+}
+.formulario_inscripcion input[type="submit"]{
+   align-content: center;
+   margin-left:15.3rem;
+   height: 2.5rem;
+   margin-top: 1rem;
+   width:7rem;
+   background-color: #00C6F0;
+   color:white;
+   font-weight: bold;
+   font-size:1rem;
+   border-radius: 5px;
+}

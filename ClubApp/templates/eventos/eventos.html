@@ -22,7 +22,7 @@
                     >{{ evento.titulo }}</a
                   >
                 </h2>
-                <p>{{evento.descripcion}}</p>
+                <p class="descripcion_evento">{{evento.descripcion}}</p>
 
                 <div class="event_block">
                   <div class="evento_imagen">
@@ -38,10 +38,10 @@
                       <div class="organizador_nombre">
                       <img src="{{ evento.organizador.foto_perfil }}" alt="Foto del organizador {{ evento.organizador.nombre }}" class="foto_organizador"/>
                       <a>{{evento.organizador.nombre}}</a>
-                      <a href="{% url 'inscripcion' evento.id %}">
-                      <button>Inscripcion</button>
-                      </a>
                       </div>
+                      <a href="{% url 'inscripcion' evento.id %}">
+                      <button class="boton_inscripcion">Inscripcion</button>
+                      </a>
                     </p>
                   </div>
                 </div>

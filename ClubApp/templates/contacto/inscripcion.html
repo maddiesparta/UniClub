@@ -5,13 +5,22 @@
     <li><a href="{% url 'eventos' %}">Eventos</a></li>
     <li><a href="{% url 'organizadores' %}">Organizadores</a></li>
     <li><a href="{% url 'actividades' %}">Actividades</a></li>
-    <li class="selected"><a href="{% url 'eventos' %}">Contacto</a></li>
 {% endblock %}
 {% block content %}
-
-    <form action="" method="post">
+    
+    <form action="" method="post" class="formulario_inscripcion">
         {% csrf_token %}
-        {{form}}
+        {% for field in form %}
+        <div class="campos" > 
+            {{ field.errors }} 
+            {{ field.label_tag }} {{ field }}
+            {% if field.help_text %}
+            <p class="help">
+            {{ field.help_text|safe }}
+            </p>
+            {% endif %}
+        </div>
+        {% endfor %}
     <input type="submit" value="Submit"/>
 
     
