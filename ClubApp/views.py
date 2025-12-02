@@ -30,6 +30,10 @@ class ActividadesListView(ListView):
     model = Actividad
     template_name = "actividades/actividades.html"
     context_object_name = "actividades"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['eventos'] = Evento.objects.all()
+        return context
 
 class ActividadesEventoListView(ListView):
         model = Actividad
@@ -48,6 +52,10 @@ class OrganizadoresListView(ListView):
     model = Organizador
     template_name = "organizadores/organizadores.html"
     context_object_name = "organizadores"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['eventos'] = Evento.objects.all()
+        return context
 
 class EventosOrganizadorListView(ListView):
         model = Evento
@@ -65,6 +73,11 @@ class EventosOrganizadorListView(ListView):
 class ActividadDetailView(DetailView):
     model = Actividad
     template_name = "actividades/detalle_actividad.html"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['eventos'] = Evento.objects.all()
+        return context
+    
     
 def contacto(request):
     return render(request, 'contacto/contacto.html')

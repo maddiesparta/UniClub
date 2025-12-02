@@ -140,6 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
         carousel.style.transform = `translateX(-${currentIndex * 100}%)`
     }
     carousel.style.transform = 'translateX(0%)'
-    setInterval(nextSlide, 1000)
+    setInterval(nextSlide, 3000)
 
 })
