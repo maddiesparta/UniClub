@@ -38,3 +38,14 @@ class Organizador(models.Model):
     class Meta:
         verbose_name = "Organizador"
         verbose_name_plural = "Organizadores"
+
+class Inscripcion(models.Model):
+    evento=models.ForeignKey(Evento,on_delete=models.CASCADE, related_name='evento')
+    nombre = models.CharField(max_length=100)
+    email = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.nombre
+    class Meta:
+        verbose_name = "Inscripcion"
+        verbose_name_plural = "Inscripciones"

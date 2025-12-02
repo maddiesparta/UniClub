@@ -9,13 +9,10 @@
 {% endblock %}
 {% block content %}
 
-    <h1>Contactanos mediante:</h1>
-     <table id="tabla_contacto">
-        <tr>
-            <td><h2>Correo electronico:</h2></td>
-            <td><a href="info@uniclub.eus">info@uniclub.eus</a></td>
-        </tr>
-    </table>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+    <input type="submit" value="Submit"/>
 
     
 {%endblock%}

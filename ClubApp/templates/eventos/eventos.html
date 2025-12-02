@@ -6,7 +6,6 @@
     <li class="selected"><a href="{% url 'eventos' %}">Eventos</a></li>
     <li><a href="{% url 'organizadores' %}">Organizadores</a></li>
     <li><a href="{% url 'actividades' %}">Actividades</a></li>
-    <li><a href="{% url 'eventos' %}">Contacto</a></li>
     <li id="dark-mode">Modo Oscuro</li>
 {% endblock %}
 
@@ -39,6 +38,9 @@
                       <div class="organizador_nombre">
                       <img src="{{ evento.organizador.foto_perfil }}" alt="Foto del organizador {{ evento.organizador.nombre }}" class="foto_organizador"/>
                       <a>{{evento.organizador.nombre}}</a>
+                      <a href="{% url 'inscripcion' evento.id %}">
+                      <button>Inscripcion</button>
+                      </a>
                       </div>
                     </p>
                   </div>

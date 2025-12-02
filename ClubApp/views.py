@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Evento, Actividad, Organizador
+from .models import Evento, Actividad, Organizador, Inscripcion
+from .forms import InscripcionForm
 from datetime import date, datetime
 from django.views.generic import ListView
 from django.views.generic import DetailView
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 
@@ -66,3 +68,25 @@ class ActividadDetailView(DetailView):
     
 def contacto(request):
     return render(request, 'contacto/contacto.html')
+
+
+def inscripcionForm(request, evento_id):
+    inscripcion_inst = get_object_or_404(Evento, id = evento_id)
+
+    if request.method == 'POST':
+        form = InscripcionForm(request.POST)
+        if form.is_valid():
+            nombre = form.cleaned_data['nombre']
+            email = form.cleaned_data['email']
+            Inscripcion.objects.create(
+                evento=inscripcion_inst, 
+                nombre=nombre,
+                email=email
+            )
+            return HttpResponseRedirect('/ClubApp/eventos/')
+
+    else:
+        context = {'evento':inscripcion_inst}
+        form = InscripcionForm()
+        context.update({"form":form})
+        return render(request, 'contacto/inscripcion.html', context)
