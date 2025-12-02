@@ -1,0 +1,316 @@
+[
+    {
+        "model": "ClubApp.Organizador",
+        "pk": 1,
+        "fields": {
+            "username": "Markel",
+            "email": "markel@gmail.com",
+            "dni": "66666666A",
+            "foto_perfil": "https://ae01.alicdn.com/kf/HTB1uibNPVXXXXcXXFXXq6xXFXXXZ/Mini-Amarillo-Patito-de-Goma-Pato-Patito-De-Goma-Del-Ba-o-Del-Beb-Juguetes-de.jpg",
+            "password": "pbkdf2_sha256$1000000$xGbsmkKIoqGe8ik66BW4td$0iSo0IzRg+oEORqiUstuuh+qCu0hJJAdODgz3rKUbEg=",
+            "is_staff": true,
+            "is_superuser": true
+        }
+    },
+    {
+        "model": "ClubApp.Organizador",
+        "pk": 2,
+        "fields": {
+            "username": "Josu",
+            "email": "josu@gmail.com",
+            "dni": "73849581A",
+            "foto_perfil": "https://www.maxcenter.com/wp-content/uploads/sites/31/2018/12/olentzero.jpg",
+            "password": "pbkdf2_sha256$1000000$xGbsmkKIoqGe8ik66BW4td$0iSo0IzRg+oEORqiUstuuh+qCu0hJJAdODgz3rKUbEg=",
+            "is_staff": true,
+            "is_superuser": true
+        }
+    },
+    {
+        "model": "ClubApp.Organizador",
+        "pk": 3,
+        "fields": {
+            "username": "Naia",
+            "email": "naiaml@gmail.com",
+            "dni": "79123456F",
+            "foto_perfil": "https://images.squarespace-cdn.com/content/v1/56066cf9e4b0ffbc0fe62db1/1603860556825-SX2V9ODK5MOZ1OZ8OLLK/a1829975877_16.jpg",
+            "password": "pbkdf2_sha256$1000000$xGbsmkKIoqGe8ik66BW4td$0iSo0IzRg+oEORqiUstuuh+qCu0hJJAdODgz3rKUbEg=",
+            "is_staff": true,
+            "is_superuser": true
+        }
+    },
+    {
+        "model": "ClubApp.Organizador",
+        "pk": 4,
+        "fields": {
+            "username": "Maddi",
+            "email": "maddi@gmail.com",
+            "dni": "12345676G",
+            "foto_perfil": "https://static.wikia.nocookie.net/seriesspain/images/b/b4/Marisa.jpg/revision/latest/scale-to-width-down/220?cb=20110104153915&path-prefix=es",
+            "password": "pbkdf2_sha256$1000000$xGbsmkKIoqGe8ik66BW4td$0iSo0IzRg+oEORqiUstuuh+qCu0hJJAdODgz3rKUbEg=",
+            "is_staff": true,
+            "is_superuser": true
+        }
+    },
+    {
+        "model": "ClubApp.Evento",
+        "pk": 1,
+        "fields": {
+            "titulo": "Boicot a feria Santo Tomás",
+            "descripcion": "Contra la masificación, boicotearemos la feria de Santo Tomás del arenal de Bilbao",
+            "fecha": "21/12/2025",
+            "pancarta": "https://images-ext-1.discordapp.net/external/4oqKFlRcHX7kSJQl_mj5yqY35PYQDAkImSD990UGVyE/%3Ffit%3D1170%252C527%26ssl%3D1/https/i0.wp.com/www.gullivervan.es/wp-content/uploads/2022/12/Feria-Santo-Tomas-2022-scaled.jpeg?format=webp&width=912&height=411",
+            "tematica": "Social",
+            "organizador": 2
+        }
+    },
+    {
+        "model": "ClubApp.Evento",
+        "pk": 2,
+        "fields": {
+            "titulo": "Pesca del siluro",
+            "descripcion": "Para deshacernos de la especie invasora, iremos al Ebro a matar siluros",
+            "fecha": "22/12/2025",
+            "pancarta": "https://images-ext-1.discordapp.net/external/fTO40uB_9yt2mstFSvjyebHH-Bkw40Q8kqpwtH_LBkw/https/berek.hu/wp-content/uploads/2021/07/GettyImages-1091661038.jpg?format=webp&width=912&height=684",
+            "tematica": "Medioambiente",
+            "organizador": 2
+        }
+    },
+    {
+        "model": "ClubApp.Evento",
+        "pk": 3,
+        "fields": {
+            "titulo": "Santa Luzia ospakizuna",
+            "descripcion": "Día en el que celebrar el santo de las costureras y modistillas.",
+            "fecha": "13/12/2025",
+            "pancarta": "https://menu-diario.com/wp-content/uploads/2017/09/restaurante-amboto-0.jpg",
+            "tematica": "Ocio",
+            "organizador": 2
+        }
+    },
+    {
+        "model": "ClubApp.Evento",
+        "pk": 4,
+        "fields": {
+            "titulo": "Padel",
+            "descripcion": "Venid a mover el cuerpo con compañeros y amigos en las pistas de padel",
+            "fecha": "20/11/2025",
+            "pancarta": "https://polideportivolarraona.org/wp-content/uploads/2024/03/origen-padel.jpg",
+            "tematica": "Deporte",
+            "organizador": 1
+        }
+    },
+    {
+        "model": "ClubApp.Evento",
+        "pk": 5,
+        "fields": {
+            "titulo": "CTF",
+            "descripcion": "Unete a la proxima CTF con el club.",
+            "fecha": "15/01/2026",
+            "pancarta": "https://i.ytimg.com/vi/rfP_6Ieczek/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBoiNMnLn4jUNy2vcQo0Xe8N_W82A",
+            "tematica": "Informática",
+            "organizador": 4
+        }
+    },
+    {
+        "model": "ClubApp.Evento",
+        "pk": 6,
+        "fields": {
+            "titulo": "Excursion a Guggenheim",
+            "descripcion": "Excursion grupal al museo para disfrutar de las nuevas exposiciones.",
+            "fecha": "01/12/2025",
+            "pancarta": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg",
+            "tematica": "Cultura",
+            "organizador": 3
+        }
+    },
+    {
+        "model": "ClubApp.Evento",
+        "pk": 7,
+        "fields": {
+            "titulo": "Juegos de mesa",
+            "descripcion": "Pasaremos la tarde jugando a juegos de mesa para conocernos entre todos, todo el mundo es bienvenido :)",
+            "fecha": "08/12/2025",
+            "pancarta": "https://images-ext-1.discordapp.net/external/4oqKFlRcHX7kSJQl_mj5yqY35PYQDAkImSD990UGVyE/%3Ffit%3D1170%252C527%26ssl%3D1/https/i0.wp.com/www.gullivervan.es/wp-content/uploads/2022/12/Feria-Santo-Tomas-2022-scaled.jpeg?format=webp&width=912&height=411",
+            "tematica": "Social",
+            "organizador": 3
+        }
+    },
+    {
+        "model": "ClubApp.Evento",
+        "pk": 8,
+        "fields": {
+            "titulo": "Regex 101",
+            "descripcion": "Aprende a leer expresiones regulares utilizando las herramientas apropiadas.",
+            "fecha": "4/12/2027",
+            "pancarta": "https://images-ext-1.discordapp.net/external/6N8Hza4QVOZtD5_aTVq1PE4yaEYW8EsVmi-Vy3W4tWs/https/miro.medium.com/v2/resize%3Afit%3A1358/0%2ATmEE1PncrTqHTVp8.png?format=webp&quality=lossless&width=912&height=513",
+            "tematica": "Informática",
+            "organizador": 4
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 1,
+        "fields": {
+            "nombre": "Kalejira",
+            "descripcion": "Cantaremos y bailaremos al son de los txistus, tamboriles y trikitixas",
+            "hora": "13:00",
+            "foto": "https://www.bilbohiria.eus/bh/wp-content/uploads/2017/05/kantari.jpg",
+            "evento": 3
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 2,
+        "fields": {
+            "nombre": "Sacrificio del siluro",
+            "descripcion": "Sacrificaremos los siluros pescados a lo largo de la mañana",
+            "hora": "14:00",
+            "foto": "https://estaticosgn-cdn.deia.eus/clip/6f12553c-46f1-42e5-9d58-748f7b2e2945_16-9-aspect-ratio_default_0.jpg",
+            "evento": 2
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 3,
+        "fields": {
+            "nombre": "Cebado",
+            "descripcion": "Cebaremos a los peces para ir atrayendo las presas",
+            "hora": "9:00",
+            "foto": "https://media.piscor.com/img/ma/cebado-5_3294_l.jpg",
+            "evento": 2
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 4,
+        "fields": {
+            "nombre": "Quema de casetas",
+            "descripcion": "Quemaremos las casetas de la BBK",
+            "hora": "13:00",
+            "foto": "https://media.eitb.eus/multimedia/images/2015/12/21/1839574/santo-tomas-bilbo1-_foto610x342.JPG",
+            "evento": 1
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 5,
+        "fields": {
+            "nombre": "Manifestación",
+            "descripcion": "Nos uniremos con pancartas y al grito de 'Santo Tomás, no lo aguanto más'",
+            "hora": "11:00",
+            "foto": "https://adivin.com/img/cms/es/Otro-contenido/Contextos/Manifestaciones/espacio-manifestaciones.jpg",
+            "evento": 1
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 6,
+        "fields": {
+            "nombre": "Torneo de Padel",
+            "descripcion": "Meeting point en la entrada superior de la uni",
+            "hora": "17:00",
+            "foto": "https://www.deusto.eus/sites/Satellite?blobcol=urldata&blobheader=image%2Fjpeg&blobkey=id&blobtable=MungoBlobs&blobwhere=1605741384838&ssbinary=true",
+            "evento": 4
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 7,
+        "fields": {
+            "nombre": "Comienzo CTF",
+            "descripcion": "Comienza lo divertido, manos a la obra.",
+            "hora": "9:00",
+            "foto": "https://scpr.brightspotcdn.com/dims4/default/aec37c7/2147483647/strip/true/crop/3676x2544+0+0/resize/792x548!/quality/90/?url=https%3A%2F%2Fa.scpr.org%2F65522_0caba889a310c64cf281e0715e4cd87a_original",
+            "evento": 5
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 8,
+        "fields": {
+            "nombre": "Hora de encuentro",
+            "descripcion": "Todos los participantes se reuniran en el CRAI",
+            "hora": "08:00",
+            "foto": "https://upload.wikimedia.org/wikipedia/commons/7/79/Bilbao_-_Nueva_Biblioteca_de_la_Universidad_de_Deusto_3.jpg",
+            "evento": 5
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 9,
+        "fields": {
+            "nombre": "Tomar algo",
+            "descripcion": "Damos fin al evento tomando algo en casco viejo.",
+            "hora": "13:00",
+            "foto": "https://www.latroupe.com/content/thumbs/640_/content/imgsxml/blog/32-ee1a6976-9563-4d20-a835-249d814558ec-16-9-aspect-ratio-default-01616.jpg",
+            "evento": 6
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 10,
+        "fields": {
+            "nombre": "Entrada a museo",
+            "descripcion": "Exploraremos el museo de arriba abajo, disfrutando cada sala.",
+            "hora": "09:30",
+            "foto": "https://cms.guggenheim-bilbao.eus/uploads/2019/03/edificio-interior-manolo-valdes-guggenheim-bilbao.jpeg",
+            "evento": 6
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 11,
+        "fields": {
+            "nombre": "Quedada",
+            "descripcion": "Nos reuniremos delante de puppy antes de entrar al museo.",
+            "hora": "09:00",
+            "foto": "https://cms.guggenheim-bilbao.eus/uploads/2021/03/Jeff-Koons-Puppy-1992.jpg",
+            "evento": 6
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 12,
+        "fields": {
+            "nombre": "Tres en raya",
+            "descripcion": "Comienzo del evento con un torneo de tres en raya, rey de la pista.",
+            "hora": "16:00",
+            "foto": "https://www.ceroresiduo.com/wp-content/uploads/047024001.jpg",
+            "evento": 7
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 13,
+        "fields": {
+            "nombre": "Partida de Monopoly",
+            "descripcion": "Partida larga de monopoly para dar fin al evento",
+            "hora": "19:00",
+            "foto": "https://i.ebayimg.com/images/g/b-0AAOSwa2Viq9Mv/s-l1200.jpg",
+            "evento": 7
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 14,
+        "fields": {
+            "nombre": "Algoritmos de Regex",
+            "descripcion": "Algortimos básicos para resolución de ejercicios regex",
+            "hora": "13:00",
+            "foto": "https://www.uni-muenster.de/imperia/md/images/allgemein/2014/studium/fotolia_minerva_studio_64341665_l_2_1_1492x746.jpg",
+            "evento": 8
+        }
+    },
+    {
+        "model": "ClubApp.Actividad",
+        "pk": 15,
+        "fields": {
+            "nombre": "Sintaxis de expresiones",
+            "descripcion": "Sintaxis básica de expresiones regulares",
+            "hora": "11:45",
+            "foto": "https://img.freepik.com/fotos-premium/gente-estudiando-biblioteca_600776-43761.jpg",
+            "evento": 8
+        }
+    }
+]
+

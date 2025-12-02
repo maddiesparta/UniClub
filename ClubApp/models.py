@@ -1,3 +1,4 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 class Evento(models.Model):
@@ -18,7 +19,7 @@ class Actividad(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.CharField(max_length=300)
     hora = models.CharField(max_length=15)
-    foto = models.URLField(max_length=200) # Cambiara a array de fotos
+    foto = models.URLField(max_length=200)
     evento= models.ForeignKey(Evento, on_delete=models.CASCADE, related_name='actividades')
 
     def __str__(self):
@@ -27,14 +28,12 @@ class Actividad(models.Model):
         verbose_name = "Actividad"
         verbose_name_plural = "Actividades"
 
-class Organizador(models.Model):
-    nombre = models.CharField(max_length=100)
-    email = models.CharField(max_length=100)
+class Organizador(AbstractUser):
     dni = models.CharField(max_length=9)
     foto_perfil= models.URLField(max_length=200)
 
     def __str__(self):
-        return self.nombre
+        return self.username
     class Meta:
         verbose_name = "Organizador"
         verbose_name_plural = "Organizadores"

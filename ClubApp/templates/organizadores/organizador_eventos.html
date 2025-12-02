@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<h1>Eventos organizados por {{organizador.nombre}}</h1> 
+<h1>Eventos organizados por {{organizador.username}}</h1> 
 <ul>
     {% for evento in eventos %}
     {% if evento.organizador.id == organizador.id %}
