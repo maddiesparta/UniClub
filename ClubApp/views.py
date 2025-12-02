@@ -41,7 +41,7 @@ class ActividadesEventoListView(ListView):
             context = super().get_context_data(**kwargs)
             evento_id = self.kwargs['evento_id']
             # Añadir un listado de departamentos
-            context['evento'] = get_object_or_404(Organizador, id=evento_id)
+            context['evento'] = get_object_or_404(Evento, id=evento_id)
             return context
 
 class OrganizadoresListView(ListView):

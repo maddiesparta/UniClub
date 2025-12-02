@@ -350,7 +350,7 @@ table tr td
     display: flex;
 }
 
-<!--Estilo de eventos-->
+/*Estilo de eventos*/
 .evento {
     padding: 5px;
 }
@@ -374,8 +374,8 @@ table tr td
 }
 
 .side_details {
-    margin-left: 6%;
-    width: 90%;
+    margin-left: 5%;
+    width: 85%;
 }
 .side_details p {
     font-size: 15px;
@@ -396,8 +396,6 @@ table tr td
   height: 100%;
   object-fit: cover;
 }
-
-
 
 .foto_organizador {
     width: 2rem;
