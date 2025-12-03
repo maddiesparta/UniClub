@@ -449,11 +449,11 @@ table tr td
 
 
 .organizador_nombre a{
-    text-decoration: none;
-    color: rgb(143, 143, 143);
-    font-weight: bold;
-    font-size: 18px;
-    vertical-align: middle;
+      text-decoration: none;
+      color: rgb(143, 143, 143);
+      font-weight: bold;
+      font-size: 18px;
+      vertical-align: middle;
     
 }
 
@@ -543,43 +543,55 @@ p{
 /* Estilo inscripcion.html */
 .formulario_inscripcion{
   border: 2px solid #00C6F0;
-  height:30rem;
-  align-content: center;
-  background-color: #d8d8d89a;
+  background-color: #f5f5f5;
   border-radius: 15px;
-  margin-top:20px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 500px;
 }
 
 .campos{
-  margin-bottom: 5px;
-  margin-left: 11rem;
-  align-content: center;
+  margin-bottom: 20px;
+  
 }
 
 .campos label{
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-weight: bold;
-  color: rgb(99, 99, 99);
-  font-size:1.5rem;
+  color: #333;
+  font-size:1.1rem;
 }
 
 .campos input{
-  width: 15rem;
-  height: 2rem;
+  width: 100%;;
+  height: 2.2rem;
   padding: 5px;
+  padding-right: 0;
+  padding-left:0;
   border: 2px solid #00c4f0e8;
   border-radius: 4px;
+  font-size: 1rem;
 }
 .formulario_inscripcion input[type="submit"]{
-   align-content: center;
-   margin-left:15.3rem;
+   display: block;
+   margin: 30px auto 0 auto;
    height: 2.5rem;
-   margin-top: 1rem;
-   width:7rem;
+   width: 8rem;
    background-color: #00C6F0;
-   color:white;
+   color: white;
    font-weight: bold;
-   font-size:1rem;
+   font-size: 1rem;
    border-radius: 5px;
+   cursor: pointer;
+}
+.inscripcionTitulo {
+  text-align: center;
+  margin: 30px 0;
+  margin-bottom: 0;
+}
+
+.inscripcionTitulo h1 {
+  color: #333;
+  font-size: 1.5rem;
 }

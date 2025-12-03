@@ -134,6 +134,7 @@ def inscripcionForm(request, evento_id):
         if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
     ]
     proximos3 = proximos[:3]
+    eventos_carrusel = [inscripcion_inst]
     if request.method == 'POST':
         form = InscripcionForm(request.POST)
         if form.is_valid():
@@ -147,7 +148,7 @@ def inscripcionForm(request, evento_id):
             return HttpResponseRedirect('/ClubApp/eventos/')
 
     else:
-        context = {'evento':inscripcion_inst,'eventos': [inscripcion_inst],'proximos_eventos':proximos3}
+        context = {'evento':inscripcion_inst,'eventos': eventos_carrusel,'proximos_eventos':proximos3}
         form = InscripcionForm()
         context.update({"form":form})
         return render(request, 'contacto/inscripcion.html', context)
