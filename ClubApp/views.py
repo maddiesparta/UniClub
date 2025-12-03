@@ -1,3 +1,4 @@
+from typing import Any, Dict
 from django.shortcuts import render, get_object_or_404
 from .models import Evento, Actividad, Organizador, Inscripcion
 from .forms import InscripcionForm
@@ -25,6 +26,17 @@ class EventosListView(ListView):
     model = Evento
     template_name = "eventos/eventos.html"
     context_object_name = "eventos"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        eventos_ordenados = sorted(Evento.objects.all(), key=obtener_fecha)
+        hoy = date.today()
+        proximos = [
+            e for e in eventos_ordenados
+            if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
+        ]
+        context['proximos_eventos'] = proximos[:3]
+        return context
+
 
 class ActividadesListView(ListView):
     model = Actividad
@@ -33,6 +45,13 @@ class ActividadesListView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['eventos'] = Evento.objects.all()
+        eventos_ordenados = sorted(Evento.objects.all(), key=obtener_fecha)
+        hoy = date.today()
+        proximos = [
+            e for e in eventos_ordenados
+            if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
+        ]
+        context['proximos_eventos'] = proximos[:3]
         return context
 
 class ActividadesEventoListView(ListView):
@@ -43,9 +62,18 @@ class ActividadesEventoListView(ListView):
         def get_context_data(self, **kwargs):
             # Cargar el contexto base
             context = super().get_context_data(**kwargs)
+            context['eventos'] = Evento.objects.all()
             evento_id = self.kwargs['evento_id']
             # Añadir un listado de departamentos
             context['evento'] = get_object_or_404(Evento, id=evento_id)
+            eventos_ordenados = sorted(Evento.objects.all(), key=obtener_fecha)
+            hoy = date.today()
+            proximos = [
+                e for e in eventos_ordenados
+                if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
+            ]
+            context['proximos_eventos'] = proximos[:3]
+
             return context
 
 class OrganizadoresListView(ListView):
@@ -55,6 +83,13 @@ class OrganizadoresListView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['eventos'] = Evento.objects.all()
+        eventos_ordenados = sorted(Evento.objects.all(), key=obtener_fecha)
+        hoy = date.today()
+        proximos = [
+            e for e in eventos_ordenados
+            if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
+        ]
+        context['proximos_eventos'] = proximos[:3]
         return context
 
 class EventosOrganizadorListView(ListView):
@@ -76,6 +111,13 @@ class ActividadDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['eventos'] = Evento.objects.all()
+        eventos_ordenados = sorted(Evento.objects.all(), key=obtener_fecha)
+        hoy = date.today()
+        proximos = [
+            e for e in eventos_ordenados
+            if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
+        ]
+        context['proximos_eventos'] = proximos[:3]
         return context
     
     
@@ -85,7 +127,13 @@ def contacto(request):
 
 def inscripcionForm(request, evento_id):
     inscripcion_inst = get_object_or_404(Evento, id = evento_id)
-
+    eventos_ordenados = sorted(Evento.objects.all(), key=obtener_fecha)
+    hoy = date.today()
+    proximos = [
+        e for e in eventos_ordenados
+        if datetime.strptime(e.fecha, "%d/%m/%Y").date() >= hoy
+    ]
+    proximos3 = proximos[:3]
     if request.method == 'POST':
         form = InscripcionForm(request.POST)
         if form.is_valid():
@@ -99,7 +147,8 @@ def inscripcionForm(request, evento_id):
             return HttpResponseRedirect('/ClubApp/eventos/')
 
     else:
-        context = {'evento':inscripcion_inst,'eventos': [inscripcion_inst],}
+        context = {'evento':inscripcion_inst,'eventos': [inscripcion_inst],'proximos_eventos':proximos3}
         form = InscripcionForm()
         context.update({"form":form})
         return render(request, 'contacto/inscripcion.html', context)
+        
