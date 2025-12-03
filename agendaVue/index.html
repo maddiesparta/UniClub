@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Agenda">
     <meta name="author" content="e-ghost 2019">
+    <script type="text/javascript" src="js/vue.js"></script>
 
     <title>AgendaVue</title>
 
@@ -91,42 +92,49 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <h4>Nombre</h4>
-                </div>
-                <div class="col-xs-4">
-                    <h4>Email</h4>
-                </div>
-                <div class="col-xs-3">
-                    <h4>Teléfono</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <p>John Doe</p>
-                </div>
-                <div class="col-xs-4">
-                    <p>john.doe@deusto.es</p>
-                </div>
-                <div class="col-xs-3">
-                    <p>555555555</p>
-                </div>
-                <div class="col-xs-1">
-                      <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span></button>
-                </div>
-            </div>
-            </div>
-            <div>
+            <div v-if="contactos.length == 0">
               <div class="row">
                   <div class="col-xs-12">
                       <p>No se ha encontrado ningún contacto.</p>
                   </div>
               </div>
             </div>
+            <ol v-else>
+                <li v-for="(contacto, index) in contactos">
+                    <div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <h4>Nombre</h4>
+                            </div>
+                            <div class="col-xs-4">
+                                <h4>Email</h4>
+                            </div>
+                            <div class="col-xs-3">
+                                <h4>Teléfono</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <p>{{contacto.nombre}}</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p>{{contacto.email}}</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p>{{contacto.tlf}}</p>
+                            </div>
+                            <div class="col-xs-1">
+                                <button @click="eliminarContacto(index)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
         </div>
     </section>
+
+    <script type="text/javascript">
+    </script>
 
     <!-- Añadir nuevo Section -->
     <section id="nuevo">
@@ -137,27 +145,27 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="crear-contacto">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form @submit.prevent="crearContacto" name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nombre</label>
-                                <input type="text" class="form-control" placeholder="Nombre" id="name">
+                                <input v-model="nombre" type="text" class="form-control" placeholder="Nombre" id="name">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Email" id="email">
+                                <input v-model="email" type="email" class="form-control" placeholder="Email" id="email">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Teléfono</label>
-                                <input type="tel" class="form-control" placeholder="Número de teléfono" id="phone">
+                                <input v-model="tlf" type="tel" class="form-control" placeholder="Número de teléfono" id="phone">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -165,7 +173,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Añadir</button>
+                                <button class="btn btn-success btn-lg">Añadir</button>
                             </div>
                         </div>
                     </form>
@@ -230,7 +238,8 @@
     <script src="js/freelancer.js"></script>
     
     <!-- Vue -->
-    <script src="js/vue.js"></script>   
+    <script src="js/vue.js"></script> 
+    <script src="js/main.vue"></script>   
 
 </body>
 
