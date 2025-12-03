@@ -38,9 +38,6 @@
                       <div class="organizador_nombre">
                       <img src="{{ evento.organizador.foto_perfil }}" alt="Foto del organizador {{ evento.organizador.username }}" class="foto_organizador"/>
                       <a href="{% url 'organizador_eventos' evento.organizador.id %}">{{evento.organizador.username}}</a>
-                      <a href="{% url 'inscripcion' evento.id %}">
-                      <button>Inscripcion</button>
-                      </a>
                       </div>
                       <a href="{% url 'inscripcion' evento.id %}">
                       <button class="boton_inscripcion">Inscripcion</button>
