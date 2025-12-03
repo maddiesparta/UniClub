@@ -83,16 +83,16 @@ async function getWeather(){
     
 
     var six_morning = document.getElementById("six")
-    six_morning.textContent = "6:00: " + temperatures[6] + "ºC"
+    six_morning.textContent = "6:00:   " + temperatures[6] + "ºC"
 
     var ten = document.getElementById("ten")
-    ten.textContent = "10:00: " + temperatures[10] + "ºC"
+    ten.textContent = "10:00:   " + temperatures[10] + "ºC"
 
     var two = document.getElementById("two")
-    two.textContent = "14:00: " + temperatures[14] + "ºC"
+    two.textContent = "14:00:   " + temperatures[14] + "ºC"
     
     var six_evening = document.getElementById("six_e")
-    six_evening.textContent = "18:00: " + temperatures[18] + "ºC"
+    six_evening.textContent = "18:00:   " + temperatures[18] + "ºC"
 
 }
 
