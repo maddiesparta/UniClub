@@ -1,22 +1,23 @@
 {% extends 'index.html' %} 
+{% load i18n %}
 
 {% block nav %}
     <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
     <li><a href="{% url 'index' %}">Home</a></li>
-    <li class="selected"><a href="{% url 'eventos' %}">Eventos</a></li>
-    <li><a href="{% url 'organizadores' %}">Organizadores</a></li>
-    <li><a href="{% url 'actividades' %}">Actividades</a></li>
-    <li id="dark-mode">Modo Oscuro</li>
+    <li class="selected"><a href="{% url 'eventos' %}">{% trans "Eventos" %}</a></li>
+    <li><a href="{% url 'organizadores' %}">{% trans "Organizadores" %}</a></li>
+    <li><a href="{% url 'actividades' %}">{% trans "Actividades" %}</a></li>
+    <li id="dark-mode">{% trans "Modo Oscuro" %}</li>
 {% endblock %}
 
 {% block content %}
-<h1>Actividades del evento {{evento.titulo}}</h1>
+<h1>{% trans "Actividades del evento" %} {{evento.titulo}} {% trans "." %}</h1>
 <ul>
   {% for actividad in actividades %} {% if actividad.evento.id == evento.id %}
   <li>
     <h2>{{actividad.nombre}}</h2>
     <p>{{actividad.descripcion}}</p>
-    <p><strong>Hora: </strong>{{actividad.hora}}</p>
+    <p><strong>{% trans "Hora" %}: </strong>{{actividad.hora}}</p>
     <div class="imagen_actividades"> <img
       src="{{ actividad.foto }}"
       alt="Foto de la actividad {{ actividad.nombre }}"

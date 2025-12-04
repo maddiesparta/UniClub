@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-04 10:08+0100\n"
+"POT-Creation-Date: 2025-12-04 10:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,25 +19,42 @@ msgstr ""
 
 #: ClubApp/templates/actividades/actividades.html:7
 #: ClubApp/templates/actividades/detalle_actividad.html:7
-#: ClubApp/templates/index.html:32
+#: ClubApp/templates/contacto/inscripcion.html:7
+#: ClubApp/templates/eventos/evento_actividades.html:7
+#: ClubApp/templates/eventos/eventos.html:7
+#: ClubApp/templates/eventos/eventos.html:14 ClubApp/templates/index.html:32
+#: ClubApp/templates/organizadores/organizador_eventos.html:7
+#: ClubApp/templates/organizadores/organizadores.html:7
 msgid "Eventos"
 msgstr ""
 
 #: ClubApp/templates/actividades/actividades.html:8
 #: ClubApp/templates/actividades/detalle_actividad.html:8
-#: ClubApp/templates/index.html:33
+#: ClubApp/templates/contacto/inscripcion.html:8
+#: ClubApp/templates/eventos/evento_actividades.html:8
+#: ClubApp/templates/eventos/eventos.html:8 ClubApp/templates/index.html:33
+#: ClubApp/templates/organizadores/organizador_eventos.html:8
+#: ClubApp/templates/organizadores/organizadores.html:8
+#: ClubApp/templates/organizadores/organizadores.html:17
 msgid "Organizadores"
 msgstr ""
 
 #: ClubApp/templates/actividades/actividades.html:9
 #: ClubApp/templates/actividades/detalle_actividad.html:9
-#: ClubApp/templates/index.html:34
+#: ClubApp/templates/contacto/inscripcion.html:9
+#: ClubApp/templates/eventos/evento_actividades.html:9
+#: ClubApp/templates/eventos/eventos.html:9 ClubApp/templates/index.html:34
+#: ClubApp/templates/organizadores/organizador_eventos.html:9
+#: ClubApp/templates/organizadores/organizadores.html:9
 msgid "Actividades"
 msgstr ""
 
 #: ClubApp/templates/actividades/actividades.html:10
 #: ClubApp/templates/actividades/detalle_actividad.html:10
-#: ClubApp/templates/index.html:35
+#: ClubApp/templates/eventos/evento_actividades.html:10
+#: ClubApp/templates/eventos/eventos.html:10 ClubApp/templates/index.html:35
+#: ClubApp/templates/organizadores/organizador_eventos.html:10
+#: ClubApp/templates/organizadores/organizadores.html:10
 msgid "Modo Oscuro"
 msgstr ""
 
@@ -47,11 +64,42 @@ msgstr ""
 
 #: ClubApp/templates/actividades/actividades.html:23
 #: ClubApp/templates/actividades/detalle_actividad.html:20
+#: ClubApp/templates/eventos/evento_actividades.html:20
 msgid "Hora"
 msgstr ""
 
 #: ClubApp/templates/actividades/detalle_actividad.html:14
 msgid "Detalles de"
+msgstr ""
+
+#: ClubApp/templates/actividades/detalle_actividad.html:14
+#: ClubApp/templates/organizadores/organizador_eventos.html:14
+msgid ":"
+msgstr ""
+
+#: ClubApp/templates/contacto/inscripcion.html:13
+msgid "Inscribirse al evento"
+msgstr ""
+
+#: ClubApp/templates/contacto/inscripcion.html:13
+#: ClubApp/templates/eventos/evento_actividades.html:14
+msgid "."
+msgstr ""
+
+#: ClubApp/templates/eventos/evento_actividades.html:14
+msgid "Actividades del evento"
+msgstr ""
+
+#: ClubApp/templates/eventos/eventos.html:36
+msgid "Fecha"
+msgstr ""
+
+#: ClubApp/templates/eventos/eventos.html:38
+msgid "Organizador/a"
+msgstr ""
+
+#: ClubApp/templates/eventos/eventos.html:44
+msgid "Inscripcion"
 msgstr ""
 
 #: ClubApp/templates/index.html:24
@@ -66,10 +114,29 @@ msgstr ""
 msgid "Bienvenido a nuestro club de universidad!"
 msgstr ""
 
-#: ClubApp/templates/index.html:119
+#: ClubApp/templates/index.html:115
+msgid ""
+"UniClub es un club de universidad variado que realiza actividades sobre "
+"muchos temas, con el objetivo de fomentar la participación y las actividades "
+"grupales entre los y las estudiantes."
+msgstr ""
+
+#: ClubApp/templates/index.html:117
 msgid "Este es un grupo abierto para todas las personas interesadas."
 msgstr ""
 
-#: ClubApp/templates/index.html:121
+#: ClubApp/templates/index.html:119
 msgid "El tiempo hoy"
+msgstr ""
+
+#: ClubApp/templates/organizadores/organizador_eventos.html:14
+msgid "Eventos organizados por"
+msgstr ""
+
+#: ClubApp/templates/organizadores/organizadores.html:28
+msgid "Contacto:"
+msgstr ""
+
+#: ClubApp/templates/organizadores/organizadores.html:32
+msgid "Eventos organizados"
 msgstr ""
