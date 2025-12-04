@@ -122,7 +122,7 @@ ol li {
 #header {
   background: #CCC;
   border-bottom: 1px solid #CCC;
-  height: 186px;
+  height: 227px;
 }
 
 
@@ -712,4 +712,37 @@ p {
   border-radius: 6px;             
   box-shadow: 1px 1px 4px rgba(0,0,0,0.2); 
   text-align: center;
+}
+
+#language-switcher {
+  text-align: end;
+  width: 880px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F5F5F5;
+}
+
+#switcher-button {
+  background-color: #00c4f0e8;
+  border: 0;
+  padding: 6px 20px 5px 20px;
+  margin: 7px;
+  color: white;
+  margin-right: 13px;
+}
+
+#switcher-button:hover {
+  color: #000;
+}
+
+#language-select {
+  border: 0;
+  padding: 6px 20px 5px 20px;
+}
+
+#language-select-label {
+  font-size: 15px;
+  color: black;
+  margin-right: 5px;
 }

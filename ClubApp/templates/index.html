@@ -12,7 +12,6 @@
 
   <body>
     <div id="main">
-
       <div id="header">
         <div id="logo">
           <div id="logo_text">
@@ -24,6 +23,16 @@
             <h2>{% trans "Club de actividades de la universidad" %}</h2>
           </div>
         </div>
+         <form id="language-switcher" method="post" action="{% url 'set_language' %}">
+          {% csrf_token %}
+          <label id="language-select-label" for="language-select">{% trans "Idioma" %}</label>
+              <select id="language-select" name="language">
+                <option value="es">Español</option>
+                <option value="eus">Euskera</option>
+                <option value="esp">Esperanto</option>
+              </select>
+            <button id="switcher-button" type="submit">{% trans "Cambiar" %}</button>
+        </form>
         <div id="menubar">
           <ul id="menu">
             {% block nav %}
@@ -35,16 +44,6 @@
             <li id="dark-mode">{% trans "Modo Oscuro" %}</li>
             {% endblock %}
             {% block language_switcher %}
-        <form method="post" action="{% url 'set_language' %}">
-          {% csrf_token %}
-          <label for="language-select">Choose your language:</label>
-              <select id="language-select" name="language">
-                <option value="es">Español</option>
-                <option value="eus">Euskera</option>
-                <option value="esp">Esperanto</option>
-              </select>
-            <button type="submit">Switch</button>
-        </form>
         {% endblock %}
           </ul>
         </div>
