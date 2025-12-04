@@ -6,6 +6,7 @@ from datetime import date, datetime
 from django.views.generic import ListView
 from django.views.generic import DetailView
 from django.http import HttpResponseRedirect
+from django.utils.translation import gettext as _
 
 # Create your views here.
 

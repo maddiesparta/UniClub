@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,9 +19,9 @@
             <!-- class="logo_colour", allows you to change the colour of the text -->
             <h1>
               <a id="uniclub-title" href="{% url 'index' %}"
-                >Bienvenido a <span class="logo_colour">UniClub!</span></a>
+                >{% trans Bienvenido a <span class="logo_colour">UniClub!%}</span></a>
             </h1>
-            <h2>Club de actividades de la universidad</h2>
+            <h2>{% trans "Club de actividades de la universidad" %}</h2>
           </div>
         </div>
         <div id="menubar">
