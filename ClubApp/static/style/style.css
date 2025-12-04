@@ -665,6 +665,7 @@ p {
   font-weight: bold;
   font-size: 1rem;
   border-radius: 5px;
+}
 .formulario_inscripcion input[type="submit"]{
    display: block;
    margin: 30px auto 0 auto;
