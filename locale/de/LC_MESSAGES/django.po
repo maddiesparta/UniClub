@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-04 09:11+0100\n"
+"POT-Creation-Date: 2025-12-04 09:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,4 +20,24 @@ msgstr ""
 
 #: ClubApp/templates/index.html:24
 msgid "Club de actividades de la universidad"
+msgstr "dlñgjsdfugtioursh"
+
+#: ClubApp/templates/index.html:32
+msgid "Eventos"
+msgstr "lkjgjdshf"
+
+#: ClubApp/templates/index.html:33
+msgid "Organizadores"
+msgstr ""
+
+#: ClubApp/templates/index.html:34
+msgid "Actividades"
+msgstr ""
+
+#: ClubApp/templates/index.html:35
+msgid "Modo Oscuro"
+msgstr ""
+
+#: ClubApp/templates/index.html:65
+msgid "Proximos eventos"
 msgstr ""
