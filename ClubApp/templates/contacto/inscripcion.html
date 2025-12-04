@@ -7,7 +7,7 @@
     <li class="selected"><a href="{% url 'eventos' %}">{% trans "Eventos" %}</a></li>
     <li><a href="{% url 'organizadores' %}">{% trans "Organizadores" %}</a></li>
     <li><a href="{% url 'actividades' %}">{% trans "Actividades" %}</a></li>
-    <li id="dark-mode">Modo Oscuro</li>
+    <li id="dark-mode">{% trans "Modo Oscuro" %}</li>
 {% endblock %}
 {% block content %}
     <div class="inscripcionTitulo"><h1>{% trans "Inscribirse al evento" %} {{evento.titulo}} {% trans "." %}</h1></div>

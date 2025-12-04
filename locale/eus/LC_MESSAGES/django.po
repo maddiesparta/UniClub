@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-04 10:26+0100\n"
+"POT-Creation-Date: 2025-12-04 10:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: ClubApp/templates/contacto/inscripcion.html:7
 #: ClubApp/templates/eventos/evento_actividades.html:7
 #: ClubApp/templates/eventos/eventos.html:7
-#: ClubApp/templates/eventos/eventos.html:14 ClubApp/templates/index.html:32
+#: ClubApp/templates/eventos/eventos.html:14 ClubApp/templates/index.html:41
 #: ClubApp/templates/organizadores/organizador_eventos.html:7
 #: ClubApp/templates/organizadores/organizadores.html:7
 msgid "Eventos"
@@ -32,7 +32,7 @@ msgstr "Jazoerak"
 #: ClubApp/templates/actividades/detalle_actividad.html:8
 #: ClubApp/templates/contacto/inscripcion.html:8
 #: ClubApp/templates/eventos/evento_actividades.html:8
-#: ClubApp/templates/eventos/eventos.html:8 ClubApp/templates/index.html:33
+#: ClubApp/templates/eventos/eventos.html:8 ClubApp/templates/index.html:42
 #: ClubApp/templates/organizadores/organizador_eventos.html:8
 #: ClubApp/templates/organizadores/organizadores.html:8
 #: ClubApp/templates/organizadores/organizadores.html:17
@@ -43,7 +43,7 @@ msgstr "Antolatzaileak"
 #: ClubApp/templates/actividades/detalle_actividad.html:9
 #: ClubApp/templates/contacto/inscripcion.html:9
 #: ClubApp/templates/eventos/evento_actividades.html:9
-#: ClubApp/templates/eventos/eventos.html:9 ClubApp/templates/index.html:34
+#: ClubApp/templates/eventos/eventos.html:9 ClubApp/templates/index.html:43
 #: ClubApp/templates/organizadores/organizador_eventos.html:9
 #: ClubApp/templates/organizadores/organizadores.html:9
 msgid "Actividades"
@@ -51,8 +51,9 @@ msgstr "Jarduerak"
 
 #: ClubApp/templates/actividades/actividades.html:10
 #: ClubApp/templates/actividades/detalle_actividad.html:10
+#: ClubApp/templates/contacto/inscripcion.html:10
 #: ClubApp/templates/eventos/evento_actividades.html:10
-#: ClubApp/templates/eventos/eventos.html:10 ClubApp/templates/index.html:35
+#: ClubApp/templates/eventos/eventos.html:10 ClubApp/templates/index.html:44
 #: ClubApp/templates/organizadores/organizador_eventos.html:10
 #: ClubApp/templates/organizadores/organizadores.html:10
 msgid "Modo Oscuro"
@@ -73,7 +74,6 @@ msgid "Detalles de"
 msgstr " "
 
 #: ClubApp/templates/actividades/detalle_actividad.html:14
-#: ClubApp/templates/organizadores/organizador_eventos.html:14
 msgid ":"
 msgstr "ren detaileak:"
 
@@ -82,13 +82,16 @@ msgid "Inscribirse al evento"
 msgstr " "
 
 #: ClubApp/templates/contacto/inscripcion.html:13
-#: ClubApp/templates/eventos/evento_actividades.html:14
 msgid "."
 msgstr " jazoeran izena emon."
 
 #: ClubApp/templates/eventos/evento_actividades.html:14
 msgid "Actividades del evento"
-msgstr "Jazoeraren jarduerak"
+msgstr " "
+
+#: ClubApp/templates/eventos/evento_actividades.html:14
+msgid ". "
+msgstr " jazoerako jarduerak"
 
 #: ClubApp/templates/eventos/eventos.html:36
 msgid "Fecha"
@@ -102,36 +105,50 @@ msgstr "Antolatzaileak"
 msgid "Inscripcion"
 msgstr "Izen emotea"
 
-#: ClubApp/templates/index.html:24
+#: ClubApp/templates/index.html:23
 msgid "Club de actividades de la universidad"
 msgstr "Unibersidadeko jarduera klub-a"
 
-#: ClubApp/templates/index.html:77
+#: ClubApp/templates/index.html:28
+msgid "Idioma"
+msgstr ""
+
+#: ClubApp/templates/index.html:34
+msgid "Cambiar"
+msgstr ""
+
+#: ClubApp/templates/index.html:76
 msgid "Proximos eventos"
 msgstr "Hurrengo jazoerak"
 
-#: ClubApp/templates/index.html:113
+#: ClubApp/templates/index.html:112
 msgid "Bienvenido a nuestro club de universidad!"
 msgstr "Ongi etorri gure unibersidadeko klubera!"
 
-#: ClubApp/templates/index.html:115
+#: ClubApp/templates/index.html:114
 msgid ""
 "UniClub es un club de universidad variado que realiza actividades sobre "
 "muchos temas, con el objetivo de fomentar la participación y las actividades "
 "grupales entre los y las estudiantes."
 msgstr ""
+"UniClub hainbat gairi buruzko unibersidade klub-a da, ikasle artean talde "
+"jardueretan partehartzea bultzatzeko helburuagaz."
 
-#: ClubApp/templates/index.html:117
+#: ClubApp/templates/index.html:116
 msgid "Este es un grupo abierto para todas las personas interesadas."
 msgstr "Hau interesauta dagon edonorentzat zabalik dagoan klub-a da."
 
-#: ClubApp/templates/index.html:119
+#: ClubApp/templates/index.html:118
 msgid "El tiempo hoy"
 msgstr "Gaurko eguraldia"
 
 #: ClubApp/templates/organizadores/organizador_eventos.html:14
 msgid "Eventos organizados por"
 msgstr " "
+
+#: ClubApp/templates/organizadores/organizador_eventos.html:14
+msgid ": "
+msgstr "k antolatutako jarduerak"
 
 #: ClubApp/templates/organizadores/organizadores.html:28
 msgid "Contacto:"

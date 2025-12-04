@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-<h1>{% trans "Eventos organizados por" %} {{organizador.username}} {% trans ":" %}</h1> 
+<h1>{% trans "Eventos organizados por" %} {{organizador.username}} {% trans ": " %}</h1> 
 <ul>
     {% for evento in eventos %}
     {% if evento.organizador.id == organizador.id %}

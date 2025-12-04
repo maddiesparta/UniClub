@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-<h1>{% trans "Actividades del evento" %} {{evento.titulo}} {% trans "." %}</h1>
+<h1>{% trans "Actividades del evento" %} {{evento.titulo}} {% trans ". " %}</h1>
 <ul>
   {% for actividad in actividades %} {% if actividad.evento.id == evento.id %}
   <li>
