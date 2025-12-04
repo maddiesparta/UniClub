@@ -1,8 +1,10 @@
-from django.urls import path
+from django.urls import path, include 
 from . import views
 from django.views.generic import ListView
+from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
+    path('i18n/', include('django.conf.urls.i18n')),
     path('', views.index, name='index'),
     path('eventos/', views.EventosListView.as_view(), name='eventos'),
     path('eventos/<int:evento_id>/', views.ActividadesEventoListView.as_view(), name='evento_actividades'),

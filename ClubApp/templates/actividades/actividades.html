@@ -1,25 +1,26 @@
 {%extends 'index.html'%}
+{% load i18n %}
 
 {% block nav %}
     <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
     <li><a href="{% url 'index' %}">Home</a></li>
-    <li><a href="{% url 'eventos' %}">Eventos</a></li>
-    <li><a href="{% url 'organizadores' %}">Organizadores</a></li>
-    <li class="selected"><a href="{% url 'actividades' %}">Actividades</a></li>
-    <li id="dark-mode">Modo Oscuro</li>
+    <li><a href="{% url 'eventos' %}">{% trans "Eventos" %}</a></li>
+    <li><a href="{% url 'organizadores' %}">{% trans "Organizadores" %}</a></li>
+    <li class="selected"><a href="{% url 'actividades' %}">{% trans "Actividades" %}</a></li>
+    <li id="dark-mode">{% trans "Modo Oscuro" %}</li>
 {% endblock %}
 
 {% block content %}
 <div id="content">
           <!-- insert the page content here -->
-          <h1>Actividades de todos los eventos</h1>
+          <h1>{% trans "Actividades de todos los eventos" %}</h1>
           <ol>
             {% for actividad in actividades %}
             <li>
               <a href="{% url 'detalle_actividad' actividad.id %}"
                 >{{actividad.nombre}}
               </a> <br>
-              <p>Hora: {{actividad.hora}}</p> 
+              <p>{% trans "Hora"%}: {{actividad.hora}}</p> 
               <p id="desc">{{actividad.descripcion}}</p>
               <div class="imagen_actividades"><img  src="{{actividad.foto}}"></div>
             </li>

@@ -34,6 +34,18 @@
             <li><a href="{% url 'actividades' %}">{% trans "Actividades" %}</a></li>
             <li id="dark-mode">{% trans "Modo Oscuro" %}</li>
             {% endblock %}
+            {% block language_switcher %}
+        <form method="post" action="{% url 'set_language' %}">
+          {% csrf_token %}
+          <label for="language-select">Choose your language:</label>
+              <select id="language-select" name="language">
+                <option value="es">Español</option>
+                <option value="eus">Euskera</option>
+                <option value="esp">Esperanto</option>
+              </select>
+            <button type="submit">Switch</button>
+        </form>
+        {% endblock %}
           </ul>
         </div>
       </div>
@@ -98,15 +110,15 @@
         <div id="content">
           <!-- insert the page content here -->
           {% block content %}
-          <h1>Bienvenido a nuestro club de universidad!</h1>
+          <h1>{% trans "Bienvenido a nuestro club de universidad!" %}</h1>
           <p>
-            UniClub es un club de universidad variado que realiza actividades
+            {% trans "UniClub es un club de universidad variado que realiza actividades
             sobre muchos temas, con el objetivo de fomentar la participación y
-            las actividades grupales entre los y las estudiantes.
+            las actividades grupales entre los y las estudiantes." %}
           </p>
-          <p>Este es un grupo abierto para todas las personas interesadas.</p>
+          <p>{% trans "Este es un grupo abierto para todas las personas interesadas." %}</p>
 
-          <h3>El tiempo hoy</h3>
+          <h3>{% trans "El tiempo hoy" %}</h3>
               <div id="divTiempo">
                 <strong>
                 <span class="tiempo-list" id="six"></span>

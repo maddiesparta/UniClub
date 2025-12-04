@@ -28,6 +28,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LANGUAGES = [
+    ('eus', 'Euskera'),
+    ('es', 'Español'),
+    ('esp', 'Esperanto'),
+]
 LANGUAGE_CODE = "de"
 TIME_ZONE = 'Europe/Madrid'
 USE_I18N = True
@@ -58,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'UniClub.urls'
