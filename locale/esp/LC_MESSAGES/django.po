@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-04 10:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ClubApp/templates/actividades/actividades.html:7
+#: ClubApp/templates/actividades/detalle_actividad.html:7
+#: ClubApp/templates/index.html:32
+msgid "Eventos"
+msgstr ""
+
+#: ClubApp/templates/actividades/actividades.html:8
+#: ClubApp/templates/actividades/detalle_actividad.html:8
+#: ClubApp/templates/index.html:33
+msgid "Organizadores"
+msgstr ""
+
+#: ClubApp/templates/actividades/actividades.html:9
+#: ClubApp/templates/actividades/detalle_actividad.html:9
+#: ClubApp/templates/index.html:34
+msgid "Actividades"
+msgstr ""
+
+#: ClubApp/templates/actividades/actividades.html:10
+#: ClubApp/templates/actividades/detalle_actividad.html:10
+#: ClubApp/templates/index.html:35
+msgid "Modo Oscuro"
+msgstr ""
+
+#: ClubApp/templates/actividades/actividades.html:16
+msgid "Actividades de todos los eventos"
+msgstr ""
+
+#: ClubApp/templates/actividades/actividades.html:23
+#: ClubApp/templates/actividades/detalle_actividad.html:20
+msgid "Hora"
+msgstr ""
+
+#: ClubApp/templates/actividades/detalle_actividad.html:14
+msgid "Detalles de"
+msgstr ""
+
+#: ClubApp/templates/index.html:24
+msgid "Club de actividades de la universidad"
+msgstr ""
+
+#: ClubApp/templates/index.html:77
+msgid "Proximos eventos"
+msgstr ""
+
+#: ClubApp/templates/index.html:113
+msgid "Bienvenido a nuestro club de universidad!"
+msgstr ""
+
+#: ClubApp/templates/index.html:119
+msgid "Este es un grupo abierto para todas las personas interesadas."
+msgstr ""
+
+#: ClubApp/templates/index.html:121
+msgid "El tiempo hoy"
+msgstr ""
