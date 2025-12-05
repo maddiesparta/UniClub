@@ -74,7 +74,7 @@ msgid "Detalles de"
 msgstr " "
 
 #: ClubApp/templates/actividades/detalle_actividad.html:14
-msgid ":"
+msgid ":ㅤㅤ"
 msgstr "ren detaileak:"
 
 #: ClubApp/templates/contacto/inscripcion.html:13
@@ -111,11 +111,11 @@ msgstr "Unibersidadeko jarduera klub-a"
 
 #: ClubApp/templates/index.html:28
 msgid "Idioma"
-msgstr ""
+msgstr "Hizkuntza"
 
 #: ClubApp/templates/index.html:34
 msgid "Cambiar"
-msgstr ""
+msgstr "Aldatu"
 
 #: ClubApp/templates/index.html:76
 msgid "Proximos eventos"
@@ -156,4 +156,4 @@ msgstr "Kontaktua:"
 
 #: ClubApp/templates/organizadores/organizadores.html:32
 msgid "Eventos organizados"
-msgstr " "
+msgstr "Antolatutako jarduerak"

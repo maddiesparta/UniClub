@@ -26,7 +26,7 @@ msgstr ""
 #: ClubApp/templates/organizadores/organizador_eventos.html:7
 #: ClubApp/templates/organizadores/organizadores.html:7
 msgid "Eventos"
-msgstr ""
+msgstr "Eventoj"
 
 #: ClubApp/templates/actividades/actividades.html:8
 #: ClubApp/templates/actividades/detalle_actividad.html:8
@@ -37,7 +37,7 @@ msgstr ""
 #: ClubApp/templates/organizadores/organizadores.html:8
 #: ClubApp/templates/organizadores/organizadores.html:17
 msgid "Organizadores"
-msgstr ""
+msgstr "Organizantoj"
 
 #: ClubApp/templates/actividades/actividades.html:9
 #: ClubApp/templates/actividades/detalle_actividad.html:9
@@ -47,7 +47,7 @@ msgstr ""
 #: ClubApp/templates/organizadores/organizador_eventos.html:9
 #: ClubApp/templates/organizadores/organizadores.html:9
 msgid "Actividades"
-msgstr ""
+msgstr "Agadoj"
 
 #: ClubApp/templates/actividades/actividades.html:10
 #: ClubApp/templates/actividades/detalle_actividad.html:10
@@ -57,21 +57,21 @@ msgstr ""
 #: ClubApp/templates/organizadores/organizador_eventos.html:10
 #: ClubApp/templates/organizadores/organizadores.html:10
 msgid "Modo Oscuro"
-msgstr ""
+msgstr "Malhela reĝimo"
 
 #: ClubApp/templates/actividades/actividades.html:16
 msgid "Actividades de todos los eventos"
-msgstr ""
+msgstr "Agadoj de ĉiuj eventoj"
 
 #: ClubApp/templates/actividades/actividades.html:23
 #: ClubApp/templates/actividades/detalle_actividad.html:20
 #: ClubApp/templates/eventos/evento_actividades.html:20
 msgid "Hora"
-msgstr ""
+msgstr "Horo"
 
 #: ClubApp/templates/actividades/detalle_actividad.html:14
 msgid "Detalles de"
-msgstr ""
+msgstr "Detaloj de"
 
 #: ClubApp/templates/actividades/detalle_actividad.html:14
 msgid ":"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ClubApp/templates/contacto/inscripcion.html:13
 msgid "Inscribirse al evento"
-msgstr ""
+msgstr "Registriĝi por la evento"
 
 #: ClubApp/templates/contacto/inscripcion.html:13
 msgid "."
@@ -87,7 +87,7 @@ msgstr ""
 
 #: ClubApp/templates/eventos/evento_actividades.html:14
 msgid "Actividades del evento"
-msgstr ""
+msgstr "Eventaj agadoj"
 
 #: ClubApp/templates/eventos/evento_actividades.html:14
 msgid ". "
@@ -95,54 +95,54 @@ msgstr ""
 
 #: ClubApp/templates/eventos/eventos.html:36
 msgid "Fecha"
-msgstr ""
+msgstr "Dato"
 
 #: ClubApp/templates/eventos/eventos.html:38
 msgid "Organizador/a"
-msgstr ""
+msgstr "Organizanto"
 
 #: ClubApp/templates/eventos/eventos.html:44
 msgid "Inscripcion"
-msgstr ""
+msgstr "Aliĝo"
 
 #: ClubApp/templates/index.html:23
 msgid "Club de actividades de la universidad"
-msgstr ""
+msgstr "Klubo de universitataj agadoj"
 
 #: ClubApp/templates/index.html:28
 msgid "Idioma"
-msgstr ""
+msgstr "Lingvo"
 
 #: ClubApp/templates/index.html:34
 msgid "Cambiar"
-msgstr ""
+msgstr "Ŝanĝo"
 
 #: ClubApp/templates/index.html:76
 msgid "Proximos eventos"
-msgstr ""
+msgstr "Venontaj eventoj"
 
 #: ClubApp/templates/index.html:112
 msgid "Bienvenido a nuestro club de universidad!"
-msgstr ""
+msgstr "Bonvenon al nia universitata klubo!"
 
 #: ClubApp/templates/index.html:114
 msgid ""
 "UniClub es un club de universidad variado que realiza actividades sobre "
 "muchos temas, con el objetivo de fomentar la participación y las actividades "
 "grupales entre los y las estudiantes."
-msgstr ""
+msgstr "UniClub estas varia universitata klubo kiu faras agadojn pri multaj temoj, kun la celo instigi partoprenon kaj grupagadojn inter studentoj."
 
 #: ClubApp/templates/index.html:116
 msgid "Este es un grupo abierto para todas las personas interesadas."
-msgstr ""
+msgstr "Ĝi estas malferma grupo por interesiĝantoj."
 
 #: ClubApp/templates/index.html:118
 msgid "El tiempo hoy"
-msgstr ""
+msgstr "Hodiaŭ la vetero"
 
 #: ClubApp/templates/organizadores/organizador_eventos.html:14
 msgid "Eventos organizados por"
-msgstr ""
+msgstr "Eventoj organizitaj de"
 
 #: ClubApp/templates/organizadores/organizador_eventos.html:14
 msgid ": "
@@ -150,8 +150,8 @@ msgstr ""
 
 #: ClubApp/templates/organizadores/organizadores.html:28
 msgid "Contacto:"
-msgstr ""
+msgstr "Kontakti"
 
 #: ClubApp/templates/organizadores/organizadores.html:32
 msgid "Eventos organizados"
-msgstr ""
+msgstr "Organizitaj eventoj"
