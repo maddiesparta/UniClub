@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-04 10:43+0100\n"
+"POT-Creation-Date: 2025-12-05 15:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,7 @@ msgid "Detalles de"
 msgstr "Detaloj de"
 
 #: ClubApp/templates/actividades/detalle_actividad.html:14
-msgid ":"
+msgid ":ㅤㅤ"
 msgstr ""
 
 #: ClubApp/templates/contacto/inscripcion.html:13
@@ -121,6 +121,10 @@ msgstr "Ŝanĝo"
 msgid "Proximos eventos"
 msgstr "Venontaj eventoj"
 
+#: ClubApp/templates/index.html:89
+msgid "Busca un evento"
+msgstr "Serĉi eventon"
+
 #: ClubApp/templates/index.html:112
 msgid "Bienvenido a nuestro club de universidad!"
 msgstr "Bonvenon al nia universitata klubo!"
@@ -130,7 +134,9 @@ msgid ""
 "UniClub es un club de universidad variado que realiza actividades sobre "
 "muchos temas, con el objetivo de fomentar la participación y las actividades "
 "grupales entre los y las estudiantes."
-msgstr "UniClub estas varia universitata klubo kiu faras agadojn pri multaj temoj, kun la celo instigi partoprenon kaj grupagadojn inter studentoj."
+msgstr ""
+"UniClub estas varia universitata klubo kiu faras agadojn pri multaj temoj, "
+"kun la celo instigi partoprenon kaj grupagadojn inter studentoj."
 
 #: ClubApp/templates/index.html:116
 msgid "Este es un grupo abierto para todas las personas interesadas."

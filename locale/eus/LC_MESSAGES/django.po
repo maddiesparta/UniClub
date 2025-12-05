@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-04 10:43+0100\n"
+"POT-Creation-Date: 2025-12-05 15:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,6 +120,10 @@ msgstr "Aldatu"
 #: ClubApp/templates/index.html:76
 msgid "Proximos eventos"
 msgstr "Hurrengo jazoerak"
+
+#: ClubApp/templates/index.html:89
+msgid "Busca un evento"
+msgstr "Aurkitu jazoerak"
 
 #: ClubApp/templates/index.html:112
 msgid "Bienvenido a nuestro club de universidad!"
